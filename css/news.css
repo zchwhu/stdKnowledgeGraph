@@ -1,0 +1,53 @@
+.news-main{
+    background-color: #F6F6F6;
+}
+
+.news-main h5{
+    color: #006C84;
+    font-size: 20px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.news-post{
+    padding: 60px 70px 30px;
+    background-color: white;
+    border-radius: 4px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.news-label{
+    line-height: 34px;
+    color: #666;
+}
+
+span.news-label{
+    float: left;
+    margin: 0 10px 0 25px;
+    font-weight: 700;
+}
+
+label.news-label{
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.wangEditor-container{
+    margin-left: 15px;
+}
+
+.form-control{
+    box-shadow: none;
+    font-size: 13px;
+}
+
+.news-btn-area{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn{
+    background-image: none;
+}

@@ -1,0 +1,72 @@
+.std-main{
+    background-color: #F6F6F6;
+}
+
+.std-main h5{
+    color: #006C84;
+    font-size: 20px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.std-detail{
+    padding: 20px 80px;
+    background-color: white;
+    border-radius: 4px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.std-name{
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(37, 140, 255, 0.15);
+    margin-bottom: 20px;
+}
+
+.std-name h2{
+    color: #258cff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.std-name p{
+    color: #adadad;
+    font-size: 16px;
+}
+
+.std-info{
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.std-detail a{
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #51d696;
+    font-size: 15px;
+    -webkit-transition: background-color .4s ease-in-out 0s;
+    -moz-transition: background-color .4s ease-in-out 0s;
+    -ms-transition: background-color .4s ease-in-out 0s;
+    -o-transition: background-color .4s ease-in-out 0s;
+    transition: background-color .4s ease-in-out 0s;
+    margin: 30px 20px 20px;
+}
+
+.std-detail a:hover{
+    background-color: #1db671;
+}
+
+.std-fulltext{
+    line-height: 30px;
+    padding: 15px;
+    text-indent: 20px;
+    text-align: justify;
+    word-break: break-all;
+}
