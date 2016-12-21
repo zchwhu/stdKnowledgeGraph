@@ -1,0 +1,76 @@
+body{
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main{
+    flex-grow: 1;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.main h1{
+    text-align: center;
+    color: #333;
+}
+
+.main h3{
+    font-size: 16px;
+    text-align: center;
+    color: #bbb;
+    font-weight: normal;
+}
+
+.main h3 a{
+    color: #666;
+    margin-left: 5px;
+}
+
+.main h3 a:hover{
+    text-decoration: underline;
+}
+
+.search-area{
+    width: 60%;
+    margin: 40px auto 30px;
+}
+
+.btn-area{
+    text-align: right;
+    margin-top: 20px;
+}
+
+.btn-area .btn{
+    font-size: 15px;
+}
+
+.search-btn{
+    color: #fff;
+    background-color: #51d696;
+    -webkit-transition: background-color .4s ease-in-out 0s;
+    -moz-transition: background-color .4s ease-in-out 0s;
+    -ms-transition: background-color .4s ease-in-out 0s;
+    -o-transition: background-color .4s ease-in-out 0s;
+    transition: background-color .4s ease-in-out 0s;
+}
+
+.search-btn:hover{
+    background-color: #1db671;
+    color: #fff;
+}
+
+.search-btn:focus{
+    outline: none;
+    color: #fff;
+}
+
+.checkbox{
+    display: inline-block;
+    margin-right: 5px;
+    color: #555;
+}
