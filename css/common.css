@@ -52,31 +52,36 @@ textarea{
 }
 
 .index-header{
-    padding: 10px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.index-logo{
-    display: inline-block;
+    padding-bottom: 10px;
 }
 
 .index-logo img{
-    height: 45px;
+    height: 72px;
     width: auto;
+    margin-left: -20px;
 }
 
 .index-menu{
-    float: right;
+    width: 100%;
+    padding-top: 5px;
 }
 
 .index-item{
     display: inline-block;
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
     line-height: 45px;
 }
 
+.last-item{
+    float: right;
+    line-height: 45px;
+    display: inline-block;
+}
+
 .index-item a{
-    font-size: 16px;
+    font-size: 19px;
     color: #ffffff;
     padding: 7px;
 }
