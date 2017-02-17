@@ -15,6 +15,7 @@
     border-radius: 4px;
     color: #333;
     margin-bottom: 40px;
+    position: relative;
 }
 
 .std-name{
@@ -42,7 +43,7 @@
     padding-left: 10px;
 }
 
-.std-detail a{
+.std-detail>a{
     color: #fff;
     display: block;
     border-radius: 4px;
@@ -59,7 +60,7 @@
     margin: 30px 20px 20px;
 }
 
-.std-detail a:hover{
+.std-detail>a:hover{
     background-color: #1db671;
 }
 
@@ -69,4 +70,53 @@
     text-indent: 20px;
     text-align: justify;
     word-break: break-all;
+}
+
+.std-detail-menu{
+    position: absolute;
+    top: 0;
+    right: -160px;
+}
+
+.std-detail-menu-item>a{
+    width: 140px;
+    line-height: 40px;
+    height: 40px;
+    display: block;
+    background-color: #fff;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    color: #333;
+    border-radius: 2px;
+}
+
+.std-detail-menu-item>a:hover{
+    background-color: #51D696;
+    color: #fff;
+}
+
+.std-detail-menu-item>a>i{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url("../img/menu.png");
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.cite-icon{
+    background-position: -40px 0;
+}
+
+.term-icon{
+    background-position: 0 0;
+}
+
+.know-icon{
+    background-position: -60px 0;
+}
+
+.index-icon{
+    background-position: -20px 0;
 }
