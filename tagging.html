@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台标注</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="css/common.css" type="text/css" charset="GBK">
+    <link rel="stylesheet" href="css/tagging.css" type="text/css">
+</head>
+<body>
+    <div class="index-top">
+        <div class="index-header">
+            <div class="container">
+                        <span class="index-logo">
+                            <img src="img/logo.png" alt="标志">
+                        </span>
+                <div class="index-menu">
+                    <ul>
+                        <li class="index-item"><a href="#">首页</a></li>
+                        <li class="index-item"><a href="#">功能</a></li>
+                        <li class="index-item"><a href="#">说明</a></li>
+                        <li class="index-item"><a href="#">链接</a></li>
+                        <li class="index-item"><a href="#">咨询</a></li>
+                        <li class="index-item"><a href="#" class="index-login">登录/注册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <h3 class="tag-title">文本标注</h3>
+            <div class="tag-main">
+                <textarea id="tag-area">
+                    作为Apache成员，我觉得有必要来说两句。Apache项目有多个阶段，第一个阶段是进入孵化器。在进入孵化器前会有诸多审核流程，通过后进入Apache Incubator。此时成员需要签一个协议，完成后获赠Apache账户（Apache邮箱可以免费使用intellij哦，这也是jetbrains对开源贡献者的鼓励呐～）。在这个阶段会有mentor进行社区化指导，包括PR流程，包括license检查，包括mail list的回复，等等等。
+                </textarea>
+                <div id="tag-analog">
+
+                </div>
+            </div>
+            <div class="btn-area">
+                <button type="button" class="btn btn-success">提交</button>
+            </div>
+        </div>
+    </div>
+    <div class="index-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <p>已浏览 <span>2386</span> 次&nbsp;&nbsp;&nbsp;地址：湖北省武昌区公平路6号</p>
+                    <p>联系电话：027-88218365&nbsp;&nbsp;&nbsp;邮箱：hubeiwto@126.com</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>&copy;2016 湖北省标准化与质量研究院</p>
+                    <p>隐私声明和cookies | 使用条款 | 帮助</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tag-toolbar">
+        <a href="#" class="tag-fun" title="tag-fun1">功能1</a>
+        <a href="#">功能2</a>
+        <a href="#">功能3</a>
+        <a href="#">功能4</a>
+        <a href="#" class="tag-clear">清除标记</a>
+    </div>
+    <div class="tip-modal">
+        <div class="tip-modal-main">
+            <a href="#" class="tip-modal-close"></a>
+            <div class="tip-modal-title">
+                温馨提示
+            </div>
+            <div class="tip-modal-body">
+                对不起，当前功能仅限在谷歌浏览器下使用。如已安装谷歌浏览器，点击"取消"按钮；若未安装，点击"下载"按钮安装最新版谷歌浏览器。
+            </div>
+            <div class="tip-modal-footer">
+                <a href="#" class="tip-modal-cancel">取消</a>
+                <a href="http://www.google.cn/intl/zh-CN/chrome/browser/" class="tip-modal-down">点击下载</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="js/tagging.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var userAgent = navigator.userAgent;
+        if(userAgent.indexOf("Chrome") == -1){
+            $(".tip-modal").show();
+        }
+
+        $(".tip-modal-cancel,.tip-modal-close").click(function () {
+            $(".tip-modal").hide();
+        })
+    </script>
+</body>
+</html>
