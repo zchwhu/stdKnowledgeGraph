@@ -1,0 +1,48 @@
+.browser-detect{
+    margin: 12.5em auto 0;
+    text-align: center;
+}
+
+h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.browser-tip{
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.browser-list{
+    margin-top: 80px;
+    font-size: 0;
+}
+
+.browser-item{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.browser-item + .browser-item{
+    border-left: 1px solid #eee;
+}
+
+.browser-item a{
+    display: block;
+    color: #000;
+}
+
+.browser-item img{
+    width: 85px;
+    height: 85px;
+    border: none;
+}
+
+.browser-item p{
+    margin-top: 20px;
+    font-size: 14px;
+}

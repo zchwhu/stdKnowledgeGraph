@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>湖北省节能标准信息服务平台</title>
+    <link rel="stylesheet" href="css/common.css" type="text/css" charset="GBK">
+    <link rel="stylesheet" href="css/browserdetect.css" type="text/css">
+    <script type="text/javascript">
+        (function () {
+            var userAgent = navigator.userAgent;
+            var isOpera = userAgent.indexOf("Opera") > -1
+            var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera;
+            if(isIE){
+                var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+                reIE.test(userAgent);
+                var fIEVersion = parseFloat(RegExp["$1"]);
+                if(fIEVersion < 8){
+                    alert("浏览器版本太低");
+                }
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div class="browser-detect">
+        <h1>对不起，您的浏览器版本太低</h1>
+        <p class="browser-tip">为了您更好的用户体验，我们建议您使用以下浏览器</p>
+        <ul class="browser-list">
+            <li class="browser-item">
+                <a href="http://www.firefox.com.cn/" title="火狐浏览器">
+                    <img src="img/firefox.png">
+                    <p>火狐浏览器</p>
+                </a>
+            </li>
+            <li class="browser-item">
+                <a href="https://www.google.com/chrome" title="谷歌浏览器">
+                    <img src="img/chrome.png">
+                    <p>谷歌浏览器</p>
+                </a>
+            </li>
+            <li class="browser-item">
+                <a href="https://developer.apple.com/safari/download/" title="Safari浏览器">
+                    <img src="img/safari.png">
+                    <p>Safari浏览器</p>
+                </a>
+            </li>
+            <li class="browser-item">
+                <a href="http://www.opera.com/zh-cn" title="欧朋浏览器">
+                    <img src="img/opera.png">
+                    <p>欧朋浏览器</p>
+                </a>
+            </li>
+            <li class="browser-item">
+                <a href="https://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads" title="微软IE浏览器">
+                    <img src="img/ie.png">
+                    <p>ie8及以上浏览器</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
