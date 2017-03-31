@@ -57,9 +57,11 @@ textarea{
 }
 
 .index-logo img{
-    height: 72px;
+    height: 80px;
     width: auto;
-    margin-left: -20px;
+    margin-top: 15px;
+    margin-left: -12px;
+    margin-bottom: 10px;
 }
 
 .index-menu{

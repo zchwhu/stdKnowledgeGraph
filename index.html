@@ -13,7 +13,7 @@
         <div class="index-header">
             <div class="container">
                 <div class="index-logo">
-                    <img src="img/logo3.png">
+                    <img src="img/logo2.png">
                 </div>
                 <div class="index-menu">
                     <ul class="row">
@@ -184,6 +184,91 @@
                 <p>网上调查</p>
             </div>
         </div>
+        <div class="index-rel-link">
+            <h4>友情链接</h4>
+            <ul class="index-rel-link-tabbar">
+                <li class="index-rel-link-tab">
+                    <a href="#">链接类型一</a>
+                </li>
+                <li class="index-rel-link-tab">
+                    <a href="#">链接类型二</a>
+                </li>
+                <li class="index-rel-link-tab">
+                    <a href="#">链接类型三</a>
+                </li>
+            </ul>
+        </div>
+        <div class="index-link-area">
+            <ul class="index-rel-link-list">
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接1</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接1</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接1</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接1</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接1</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接1</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接1</a>
+                </li>
+            </ul>
+            <ul class="index-rel-link-list">
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接2</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接2</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接2</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接2</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接2</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接2</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接2</a>
+                </li>
+            </ul>
+            <ul class="index-rel-link-list">
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接3</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接3</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接3</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接3</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接3</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接3</a>
+                </li>
+                <li class="index-rel-link-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a href="#">友情链接3</a>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="index-footer">
         <div class="container">
@@ -226,6 +311,22 @@
                     }, 1000);
                     break;
             }
+        })
+
+        $(".index-rel-link-tab").mouseenter(function () {
+            var $index = $(this).index();
+            $(".index-rel-link-list").eq($index).show();
+        }).mouseleave(function () {
+            $(".index-rel-link-list").hide();
+        })
+
+        $(".index-rel-link-list").mouseenter(function () {
+            var $index = $(this).index();
+            $(".index-rel-link-list").eq($index).show();
+            $(".index-rel-link-tab").eq($index).addClass('active');
+        }).mouseleave(function () {
+            $(".index-rel-link-list").hide();
+            $(".index-rel-link-tab").removeClass('active');
         })
     </script>
 </body>

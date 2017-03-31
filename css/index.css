@@ -12,7 +12,7 @@
 }
 
 .index-info h2{
-    font-size: 42px;
+    font-size: 30px;
     margin-top: 80px;
     margin-bottom: 30px;
     line-height: 55px;
@@ -312,4 +312,67 @@
 .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img{
     width: 100%;
     height: 400px;
+}
+
+.index-rel-link{
+    border-bottom: 1px solid #ddd;
+}
+
+.index-rel-link h4,
+.index-rel-link-tabbar{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.index-rel-link h4{
+    line-height: 40px;
+    padding-left: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+    background: url("../img/link.png") no-repeat left center;
+    background-size: 20px 20px;
+}
+
+.index-rel-link-tabbar{
+    font-size: 0;
+}
+
+.index-rel-link-tab{
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: -1px;
+    border: 1px solid #ddd;
+    background-color: #eee;
+}
+
+.index-rel-link-tab:hover,
+.index-rel-link-tab.active{
+    background-color: #fff;
+    border-bottom: 1px solid transparent;
+}
+
+.index-rel-link-tab a{
+    display: block;
+    font-size: 13px;
+    line-height: 40px;
+    padding: 0 20px;
+
+    color: #535353;
+    font-weight: 700;
+}
+
+.index-rel-link-tab:hover a{
+    color: #125fb5;
+}
+
+.index-rel-link-list{
+    display: none;
+    padding: 15px 20px;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.index-rel-link-item a{
+    color: #666;
+    line-height: 25px;
 }
