@@ -13,7 +13,7 @@
 
 .index-info h2{
     font-size: 30px;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 30px;
     line-height: 55px;
 }
@@ -56,15 +56,6 @@
 .index-search button:hover{
     background-color: #1db671;
     color: #fff;
-}
-
-#index-function-section{
-    padding: 40px 0px 80px;
-    text-align: center;
-}
-
-#index-function-section .index-section-img img{
-    margin-top: 30px;
 }
 
 .index-section-header{
@@ -157,21 +148,54 @@
 }
 
 .index-function{
+    padding: 90px 0 110px;
     text-align: center;
     color: #677087;
 }
 
 .index-function h4{
-    margin: 14px 0;
+    color: #fff;
+    margin: 20px 0 14px;
 }
 
 .index-function h4 a{
+    font-size: 21px;
     color: inherit;
 }
 
+.index-function h4 a:hover{
+    text-decoration: underline;
+}
+
 .index-function p{
-    margin-top: 20px;
+    color: #fff;
+    margin-top: 30px;
+    padding: 0 15px;
     line-height: 25px;
+    font-size: 14px;
+}
+
+@media (min-width: 768px){
+    .index-info h2 {
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px){
+    .index-info p {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1200px){
+    .index-info h2 {
+        line-height: 55px;
+        margin-bottom: 30px;
+    }
+    .index-info p {
+        margin-bottom: 40px;
+    }
 }
 
 #index-news-section{
@@ -263,6 +287,57 @@
     -moz-animation: fadeinleft 1s ease-in-out;
     -o-animation: fadeinleft 1s ease-in-out;
     animation: fadeinleft 1s ease-in-out;
+}
+
+.scale{
+    -webkit-animation: scale 1s ease-in-out;
+    -moz-animation: scale 1s ease-in-out;
+    -o-animation: scale 1s ease-in-out;
+    animation: scale 1s ease-in-out;
+}
+
+@-webkit-keyframes scale {
+    0% {
+        opacity: 0;
+        transform: scale(1.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes scale{
+    0% {
+        opacity: 0;
+        transform: scale(1.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes scale {
+    0% {
+        opacity: 0;
+        transform: scale(1.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes scale {
+    0% {
+        opacity: 0;
+        transform: scale(1.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 @-webkit-keyframes fadeinleft {
